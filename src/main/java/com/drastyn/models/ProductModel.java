@@ -17,7 +17,7 @@ public class ProductModel {
 
 	@NotNull(message = "Name can't not be blank")
 	@Column(unique = true, nullable = false)
-	//@Pattern(regexp = "^[a-zA-Z\s]+", message = "Name must have only letters")
+	@Pattern(regexp = "^[a-zA-Z\s]+", message = "Name must have only letters")
 	@Size(min = 2, message = "Name should have atleast 2 characters")
 	@UniqueName()
 	private String name;

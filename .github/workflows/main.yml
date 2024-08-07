@@ -1,0 +1,13 @@
+name: "Main"
+
+on:
+  push:
+    branches-ignore: ["test*"]
+
+jobs:
+  source-code-analysis:
+    uses: Drastyn/actions/.github/workflows/source-code-analysis@main
+    with:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+

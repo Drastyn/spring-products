@@ -1,8 +1,7 @@
 name: "Main"
 
 on:
-  push:
-    branches-ignore: ["test*"]
+  workflow_dispatch:
 
 jobs:
   source-code-analysis:

@@ -16,8 +16,9 @@ jobs:
           distribution: 'zulu'
           java-version: '11'
 
-      - name: 'Build project'
+      - name: 'Spring Doc'
         shell: bash
         run: |
           chmod +x mvnw
-          ./mvnw compile  
+          ./mvnw springdoc-openapi:generate
+          ls 

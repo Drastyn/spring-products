@@ -19,6 +19,6 @@ jobs:
       - name: 'Build project'
         shell: bash
         run: |
-          chmox + mvnw
+          chmod +x mvnw
           ./mvnw build
   

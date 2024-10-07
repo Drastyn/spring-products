@@ -20,5 +20,6 @@ jobs:
         shell: bash
         run: |
           chmod +x mvnw
+          ./mvnw clean install
           ./mvnw springdoc-openapi:generate
           ls 

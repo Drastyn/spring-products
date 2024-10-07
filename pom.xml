@@ -39,11 +39,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.4</version>
-		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -53,15 +48,16 @@
 			</plugin>
 			<plugin>
 				<groupId>org.springdoc</groupId>
-				<artifactId>springdoc-openapi-maven-plugin</artifactId>
-				<version>1.4</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-					</execution>
-				</executions>
+			    	<artifactId>springdoc-openapi-maven-plugin</artifactId>
+			    	<version>1.4</version>
+			    	<executions>
+			        	<execution>	
+						<id>integration-test</id>
+				            	<goals>
+				                	<goal>generate</goal>
+				            	</goals>
+			        	</execution>
+			    </executions>
 			</plugin>
 		</plugins>
 	</build>

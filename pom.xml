@@ -42,7 +42,7 @@
 		<dependency>
 			<groupId>org.springdoc</groupId>
 			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.5.10</version>
+			<version>1.4</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -54,7 +54,7 @@
 			<plugin>
 				<groupId>org.springdoc</groupId>
 				<artifactId>springdoc-openapi-maven-plugin</artifactId>
-				<version>1.5.10</version>
+				<version>1.4</version>
 				<executions>
 					<execution>
 						<goals>

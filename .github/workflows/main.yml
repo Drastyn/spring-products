@@ -20,6 +20,5 @@ jobs:
         shell: bash
         run: |
           chmod +x mvnw
-          ./mvnw clean install
           ./mvnw verify
           ls 

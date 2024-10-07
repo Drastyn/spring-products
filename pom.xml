@@ -60,7 +60,6 @@
 			    </executions>
 			    <configuration>
 				  <apiDocsUrl>http://localhost:8080/v3/api-docs</apiDocsUrl>
-				  </headers>
 		           </configuration>
 			</plugin>
 		</plugins>

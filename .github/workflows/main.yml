@@ -20,5 +20,4 @@ jobs:
         shell: bash
         run: |
           chmod +x mvnw
-          ./mvnw build
-  
+          ./mvnw compile  

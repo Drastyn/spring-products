@@ -4,9 +4,21 @@ on:
   workflow_dispatch:
 
 jobs:
-  source-code-analysis:
-    uses: Drastyn/actions/.github/workflows/source-code-analysis.yml@main
-    secrets:
-      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout project'
+        uses: actions/checkout@v4
+      
+      - name: 'Set up Java 11'
+        uses: actions/setup-java@v4
+        with:
+          destribution: 'zulu'
+          java-version: '11'
 
-
+      - name: 'Build project'
+        shell: bash
+        run: |
+          chmox + mvnw
+          ./mvnw build
+  
